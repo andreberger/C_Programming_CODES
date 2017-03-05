@@ -1,0 +1,4 @@
+Nome:  , 0 , 0
+Nome: Gabriel , 0 , 0
+Nome: andre , 30 , 122
+Nome: berger , 123 , 45
