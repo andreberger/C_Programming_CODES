@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   for(i=2; i<=QTD+1; i++)
   {
      //printf("===%d====\n",i);
-     pthread_create(&tid[i-3],NULL,funcaoVerificaPrimos,(void *) i);
+     pthread_create(&tid[i-2],NULL,funcaoVerificaPrimos,(void *) i);
   }
   for(i=0; i<QTD; i++)
   {

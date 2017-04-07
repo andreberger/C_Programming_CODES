@@ -1,7 +1,7 @@
 #include <omp.h>
-#include <stdioh>
+#include <stdio.h>
 
-int main (int argc, char *argv[]){
+int main(int argc, char **argv[]){
 	
 	float A[2048];
 	float B[2048];
@@ -20,7 +20,7 @@ int main (int argc, char *argv[]){
 		int id = omp_get_thread_num();
 		int nt = omp_get_num_threads();
 		int size = (int) 2048/nt;
-		int ini = id*size;
+		int ini = size *id;
 		int fim = ini + size -1;
 
 		int i;
